@@ -18,6 +18,17 @@ def get_data(files):
                 if re.match(r'Тип системы', line): os_type_list.append(line.split(':')[-1].strip())
     return main_data
 
+# def write_to_csv(outputfile):
+#     result = get_data(files)
+#     for x in range(len(result[0])):
+#         for y in range(len(result[1]))
+#             print(result[x][y])
+#     return 1
+#
 
 result = get_data(files)
-print(result)
+spisok=[]
+for x in range(len(result[0])):
+    for y in range(len(result[1])):
+        (result[x][y],end='\t')
+    print('\n')
