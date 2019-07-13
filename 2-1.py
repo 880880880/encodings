@@ -32,7 +32,6 @@ def write_csv(outputfile,files):
 outputfile='output.csv'
 write_csv(outputfile,files)
 
-
 # ['Изготовитель системы', 'Название ОС', 'Код продукта', 'Тип системы']
 # ['LENOVO', 'Microsoft Windows 7 Профессиональная', '00971-OEM-1982661-00231', 'x64-based PC']
 # ['ACER', 'Microsoft Windows 10 Professional', '00971-OEM-1982661-00231', 'x64-based PC']
