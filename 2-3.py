@@ -5,7 +5,9 @@ for i in range(166, 256):
     mydict['key3'][i]=chr(i)
 with open('yamloutput.yaml','w', encoding='utf-8') as file:
     yaml.dump(mydict, file, default_flow_style=False, allow_unicode=True)
-
+with open('yamloutput.yaml','r', encoding='utf-8') as file:
+    loader=yaml.load(file, Loader=yaml.SafeLoader)
+    if mydict==loader: print('File is equal to source dictionary')
 
 # key1:
 # - element_0
